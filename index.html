@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/styles/base-style.css" />
+  <link rel="stylesheet" href="./assets/styles/clickable-boxes.css" />
+  <link rel="stylesheet" href="./assets/styles/topics.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <script src="./assets/scripts/costumizar.js"></script>
+  <script src="./assets/scripts/click_effect.js"></script>
+  <link rel="shortcut icon" href="./assets/images/icon.svg" type="image/svg+xml" />
+  <link rel="icon" href="./assets/images/icon.svg" type="image/svg+xml" />
+  <title>Processo de Implantação FSA</title>
+</head>
+
+<body>
+  <div class="escolhas col" id="escolher">
+    Selecione
+    <select style="margin-top: 10px" id="select_mao" class="select" aria-label="opções" onchange="mudou()">
+      <option value="1">👆</option>
+      <option value="2">👆🏿</option>
+      <option value="3">👆🏾</option>
+      <option value="4">👆🏽</option>
+      <option value="5">👆🏼</option>
+      <option value="6">👆🏻</option>
+    </select>
+    <hr class="style-six" />
+    Atividade
+
+    <br />
+    <input id="input_mostrar" onclick="mostrar()" style="margin-top: 10px" type="checkbox" />
+    Mostrar
+  </div>
+  <div onclick="costumizar()" class="costumizar" id="costumize">Personalizar</div>
+  <div class="mostrar_atividade" id="mostrar_atividade">Atividade</div>
+
+  <a href="#diagrama_scrum" class="subir bot_voltar" id="voltar">👆️ Diagrama</a>
+  <h1>Processo de Desenvolvimento de Software da FSA - IFSP/PEP</h1>
+  <div id="diagrama_scrum">
+    <a href="#topico_elencar_necessidades" id="elencar_necessidades" class="clickable round green"></a>
+    <a href="#topico_criar_product_backlog" id="criar_product_backlog" class="clickable round green"></a>
+    <a href="#topico_atualizar_product_backlog" id="atualizar_product_backlog" class="clickable round green"></a>
+    <a href="#topico_definir_ferramentas_metodos_sprint" id="definir_ferramentas_metodos_sprint"
+      class="clickable round green"></a>
+    <a href="#topico_criar_documentacao" id="criar_documentacao" class="clickable round green"></a>
+    <a href="#topico_planejar_sprint_atual" id="planejar_sprint" class="clickable round green"></a>
+    <a href="#topico_executar_atividades_sprint" id="executar_atividades_sprint" class="clickable round green"></a>
+    <a href="#topico_realizar_reuniao_periodica" id="realizar_reuniao_periodica" class="clickable round green"></a>
+    <a href="#topico_revisao_sprint" id="revisao_sprint" class="clickable round green"></a>
+    <a href="#topico_retrospectiva_sprint" id="retrospectiva_sprint" class="clickable round green"></a>
+    <a href="#topico_atualizar_documentacao" id="atualizar_documentacao" class="clickable round green"></a>
+    <a href="#topico_conferir_novas_necessidades" id="conferir_novas_necessidades" class="clickable round green"></a>
+    <a href="#topico_conferir_produto_finalizado" id="conferir_produto_finalizado" class="clickable round green"></a>
+    <a href="#topico_anexo1" id="product_backlog1" class="clickable round green"></a>
+    <a href="#topico_anexo1" id="product_backlog2" class="clickable round green"></a>
+    <a href="#topico_anexo1" id="product_backlog3" class="clickable round green"></a>
+    <a href="#topico_anexo1" id="product_backlog4" class="clickable round green"></a>
+    <a href="#topico_anexo1" id="product_backlog5" class="clickable round green"></a>
+    <a href="#topico_anexo1" id="product_backlog6" class="clickable round green"></a>
+    <a href="#topico_anexo2" id="sprint_backlog" class="clickable round green"></a>
+    <a href="#topico_anexo3" id="relatorio_sprint" class="clickable round green"></a>
+    <a href="#topico_anexo3" id="relatorio_sprint2" class="clickable round green"></a>
+    <img src="./assets/images/DiagramaDoProcessoDeDesenvolvimento.png" alt="Diagrama do SCRUM" />
+  </div>
+  <div class="topics">
+    <section class="topic" id="topico_elencar_necessidades">
+      <h1>A1. Preparar Ambiente de Implantação</h1>
+      <hr />
+
+      <h2>Descrição</h2>
+      <p>
+        Instalar as bibliotecas necessárias para funcionar a aplicação e/ou assegurar que
+        o ambiente de disponibilização da aplicação esteja conforme o esperado de modo que
+        seja um servidor apto à disponibilizar a aplicação ou um repositório para disponibilizar
+        a aplicação via download.
+      </p>
+
+      <h2>Responsáveis e responsabilidades</h2>
+      <p>Scrum Team</p>
+
+      <h2>Entrada e Saída</h2>
+      <h3>Entrada:</h3>
+      <ul>
+        <li>Acesso ao servidor e/ou repositório.</li>
+      </ul>
+
+      <h3>Saída:</h3>
+      <ul>
+        <li>Ambiente configurado e pronto para uso.</li>
+        <li>Bibliotecas globais instaladas e configuradas.</li>
+      </ul>
+
+      <h2>Tarefas</h2>
+
+      <ul>
+        <li>
+          <strong>A1.1</strong>
+          Instalar bibliotecas e pacotes necessários
+        </li>
+        <li>
+          <strong>A1.2</strong>
+          Instalar e configurar servidor
+        </li>
+        <li>
+          <strong>A1.3</strong>
+          Testar a disponibilidade do ambiente
+        </li>
+      </ul>
+
+      <h2>Recursos</h2>
+      <ul>
+        <li>Servidor físico ou virtual (nuvem/local)</li>
+        <ul>
+          <li>
+            Servidor do IFSP - PEP
+          </li>
+          <li>
+            <a href="https://www.digitalocean.com/" target="_blank" rel="noopener noreferer">
+              Digital Ocean</a>
+          </li>
+          <li>
+            <a href="https://aws.amazon.com/pt/" target="_blank" rel="noopener noreferer">AWS</a>
+          </li>
+        </ul>
+      </ul>
+
+      <h2>Materiais de apoio/referências</h2>
+      <p>
+        CAMPOS, Vladimir. <strong>Como usar o Google Forms (2020)</strong>. Youtube, 2020. 16min19s. Disponível em
+        <a href="https://www.youtube.com/watch?v=mbrAY-bRUDE" target="_blank" rel="noopener noreferer">
+          https://www.youtube.com/watch?v=mbrAY-bRUDE </a>. Acesso em: 03 abr. 2024.
+      </p>
+
+      <p>
+        MORAES, Janaína B. D.<strong> Técnicas para o levantamento de requisitos</strong>. 2009. Disponível em:
+        <a href="https://www.devmedia.com.br/tecnicas-para-levantamento-de-requisitos/9151" target="_blank"
+          rel="noopener noreferer">
+          https://www.devmedia.com.br/tecnicas-para-levantamento-de-requisitos/9151 </a>. Acesso em: 09 de mar. de 2023.
+      </p>
+
+      <p>
+        RETRAINING.
+        <strong>Técnicas de elicitação de requisitos em entrevista</strong>. 2020. Disponível em:
+        <a href="https://retraining.inf.ufsc.br/guia/app/classificacoes/tecnicas-de-elicitacao-de-requisitos/entidades/tecnicas-de-elicitacao-de-requisitos-entrevista"
+          target="_blank" rel="noopener noreferer">
+          https://retraining.inf.ufsc.br/guia/app/classificacoes/tecnicas-de-elicitacao-de-requisitos/entidades/tecnicas-de-elicitacao-de-requisitos-entrevista\
+        </a>. Acesso em: 10 mar. 2023.
+      </p>
+
+      <p>
+        RETRAINING. <strong>Brainstorming</strong>. 2020. Disponível em:
+        <a href="https://retraining.inf.ufsc.br/guia/app/classificacoes/tecnicas-de-elicitacao-de-requisitos/entidades/tecnicas-de-elicitacao-de-requisitos-brainstorming"
+          target="_blank" rel="noopener noreferer">
+          https://retraining.inf.ufsc.br/guia/app/classificacoes/tecnicas-de-elicitacao-de-requisitos/entidades/tecnicas-de-elicitacao-de-requisitos-brainstorming
+        </a>. Acesso em: 10 mar. 2023.
+      </p>
+    </section>
+
+
+    <section class="topic" id="topico_elencar_necessidades">
+      <h1>A2. Disponibilizar a Aplicação para Validação</h1>
+      <hr />
+
+      <h2>Descrição</h2>
+      <p>
+        Instalar as dependências necessárias para garantir a aplicação conforme a última
+        versão esperada, mantendo frontend, backend e banco de dados atualizados, realizar
+        testes de verificação para assegurar o correto funcionamento do sistema com o mínimo
+        de erros, e por fim construir e disponibilizar a solução para acesso para homologação.
+      </p>
+
+      <h2>Responsáveis e responsabilidades</h2>
+      <p>Scrum Team / Pipeline</p>
+
+      <h2>Entrada e Saída</h2>
+      <h3>Entrada:</h3>
+      <ul>
+        <li>Aplicação em um estado funcional.</li>
+        <li>Scripts de configuração e automação.</li>
+        <li>Banco de dados atualizado.</li>
+        <li>Ambiente de homologação disponível e configurado.</li>
+      </ul>
+
+      <h3>Saída:</h3>
+      <ul>
+        <li>Sistema implantado para homologação.</li>
+        <li>Aplicação acessível aos usuários.</li>
+      </ul>
+
+      <h2>Tarefas</h2>
+
+      <ul>
+        <li>
+          <strong>A2.1</strong>
+          Instalar ou atualizar aplicação
+        </li>
+        <li>
+          <strong>A2.2</strong>
+          Instalar e atualizar dependências
+        </li>
+        <li>
+          <strong>A2.3</strong>
+          Instalar ou atualizar banco de dados se necessário
+        </li>
+        <li>
+          <strong>A2.4</strong>
+          Executar construção (build) do sistema
+        </li>
+        <li>
+          <strong>A2.5</strong>
+          Configurar ambiente de homologação
+        </li>
+        <li>
+          <strong>A2.6</strong>
+          Realizar testes de fumaça
+        </li>
+        <li>
+          <strong>A2.7</strong>
+          Executar o deploy para o ambiente de homologação
+        </li>
+      </ul>
+
+      <h2>Recursos</h2>
+      <ul>
+        <li>Ferramentas de CI/CD, Pipelines</li>
+        <ul>
+          <li>
+            <a href="https://github.com/features/actions?locale=pt-BR" target="_blank" rel="noopener noreferer">
+              GitHub Actions</a>
+          </li>
+          <li>
+            <a href="https://www.jenkins.io/" target="_blank" rel="noopener noreferer">Jenkins</a>
+          </li>
+        </ul>
+        <li>Imagens e Contêineres para Servidores</li>
+        <ul>
+          <li>
+            <a href="https://www.docker.com/" target="_blank" rel="noopener noreferer">
+              Docker</a>
+          </li>
+        </ul>
+        <li>Sistema Gerenciador de Banco de Dados</li>
+        <ul>
+          <li>
+            <a href="https://www.mysql.com/" target="_blank" rel="noopener noreferer">
+              MySQL</a>
+          </li>
+          <li>
+            <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferer">PostgreSQL</a>
+          </li>
+        </ul>
+      </ul>
+    </section>
+  </div>
+</body>
+
+</html>
