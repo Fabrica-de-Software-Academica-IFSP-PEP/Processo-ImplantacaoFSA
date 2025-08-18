@@ -43,125 +43,35 @@
   <a href="#diagrama_scrum" class="subir bot_voltar" id="voltar">👆️ Diagrama</a>
   <h1>Processo de Implantação de Software da FSA - IFSP/PEP</h1>
   <div id="diagrama_scrum">
-    <a href="#topico_a2_disponibilizar_aplicacao_validacao" id="elencar_necessidades" class="clickable round green"></a>
-    <img src="./assets/images/DiagramaDoProcessoDeDesenvolvimento.png" alt="Diagrama do SCRUM" />
+    <a href="#topico_a1_preparar_ambiente" id="preparar_ambiente" class="clickable round green"></a>
+    <a href="#topico_a2_disponibiliza_a_aplicacao_para_validacao" id="diponibilizar_aplicacao" class="clickable round green"></a>
+    <a href="#topico_a3_capacitar_usuarios" id="capacitar_usuarios" class="clickable round green"></a>
+    <a href="#topico_a4_aplicar_testes_de_aceitacao" id="teste_aceitacao" class="clickable round green"></a>
+    <a href="#topico_a5_entregar_sistema_em_producao" id="entregar_sistema" class="clickable round green"></a>
+    <a href="https://fabrica-de-software-academica-ifsp-pep.github.io/Processo-ManutencaoFSA/" id="processo_manutencao" class="clickable round green" target="_blank"></a>
+    
+
+    <img src="./assets/images/DiagramaDoProcessoDeImplantacao.png" alt="Diagrama do SCRUM" />
   </div>
   <div class="topics">
-    <section class="topic" id="topico_a2_disponibilizar_aplicacao_validacao">
-      <h1>A2. Disponibilizar a Aplicação para Validação</h1>
-      <hr />
+    <section class="topic" id="topico_a1_preparar_ambiente">
+      <h1>A1. Preparar Ambiente</h1>
+    </section>
 
-      <h2>Descrição</h2>
-      <p>
-        Instalar as dependências necessárias para garantir a aplicação conforme a última
-        versão esperada, mantendo frontend, backend e banco de dados atualizados, realizar
-        testes de verificação para assegurar o correto funcionamento do sistema com o mínimo
-        de erros, e por fim construir e disponibilizar a solução para acesso para homologação.
-      </p>
+    <section class="topic" id="topico_a2_disponibiliza_a_aplicacao_para_validacao">
+      <h1>A2. Disponibilizar a aplicação para validação</h1>
+    </section>
 
-      <h2>Responsáveis e responsabilidades</h2>
-      <p>Scrum Team / Pipeline</p>
+    <section class="topic" id="topico_a3_capacitar_usuarios">
+      <h1>A3. Capacitar os usuários</h1>
+    </section>
 
-      <h2>Entrada e Saída</h2>
-      <h3>Entrada:</h3>
-      <ul>
-        <li>Aplicação em um estado funcional.</li>
-        <li>Scripts de configuração e automação.</li>
-        <li>Banco de dados atualizado.</li>
-        <li>Ambiente de homologação disponível e configurado.</li>
-      </ul>
+    <section class="topic" id="topico_a4_aplicar_testes_de_aceitacao">
+      <h1>A4. Aplicar teste de aceitação</h1>
+    </section>
 
-      <h3>Saída:</h3>
-      <ul>
-        <li>Sistema implantado para homologação.</li>
-        <li>Aplicação acessível aos usuários.</li>
-      </ul>
-
-      <h2>Tarefas</h2>
-
-      <ul>
-        <li>
-          <strong>A2.1</strong>
-          Instalar ou atualizar aplicação
-        </li>
-        <li>
-          <strong>A2.2</strong>
-          Instalar e atualizar dependências
-        </li>
-        <li>
-          <strong>A2.3</strong>
-          Instalar ou atualizar banco de dados se necessário
-        </li>
-        <li>
-          <strong>A2.4</strong>
-          Executar construção (build) do sistema
-        </li>
-        <li>
-          <strong>A2.5</strong>
-          Configurar ambiente de homologação
-        </li>
-        <li>
-          <strong>A2.6</strong>
-          Realizar testes de fumaça
-        </li>
-        <li>
-          <strong>A2.7</strong>
-          Executar o deploy para o ambiente de homologação
-        </li>
-      </ul>
-
-      <h2>Recursos</h2>
-      <ul>
-        <li>Ferramentas de CI/CD, Pipelines
-          <ul>
-            <li>
-              <a href="https://github.com/features/actions?locale=pt-BR" target="_blank" rel="noopener noreferer">
-                GitHub Actions</a>
-            </li>
-            <li>
-              <a href="https://www.jenkins.io/" target="_blank" rel="noopener noreferer">Jenkins</a>
-            </li>
-          </ul>
-        </li>
-        <li>Imagens e Contêineres para Servidores
-          <ul>
-            <li>
-              <a href="https://www.docker.com/" target="_blank" rel="noopener noreferer">
-                Docker</a>
-            </li>
-          </ul>
-        </li>
-        <li>Sistema Gerenciador de Banco de Dados
-          <ul>
-            <li>
-              <a href="https://www.mysql.com/" target="_blank" rel="noopener noreferer">
-                MySQL</a>
-            </li>
-            <li>
-              <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferer">PostgreSQL</a>
-            </li>
-        </li>
-      </ul>
-      </ul>
-      <h2>Materiais de apoio/referências</h2>
-      <p>
-        GITHUB DOCS. <strong>Guia de implantação contínua com GitHub Actions</strong>. GitHub, 2025. Disponível em:
-        <a href="https://docs.github.com/pt/actions/deployment" target="_blank" rel="noopener noreferer">
-          https://docs.github.com/pt/actions/deployment
-        </a>. Acesso em: 16 ago. 2025.
-      </p>
-      <p>
-        JENKINS. <strong>Pipeline de CI/CD: Guia de automação</strong>. Jenkins Documentation, 2025. Disponível em:
-        <a href="https://www.jenkins.io/doc/book/pipeline/" target="_blank" rel="noopener noreferer">
-          https://www.jenkins.io/doc/book/pipeline/
-        </a>. Acesso em: 16 ago. 2025.
-      </p>
-      <p>
-        DOCKER. <strong>Como criar ambientes de homologação com Docker</strong>. Docker Docs, 2025. Disponível em:
-        <a href="https://docs.docker.com/get-started/overview/" target="_blank" rel="noopener noreferer">
-          https://docs.docker.com/get-started/overview/
-        </a>. Acesso em: 16 ago. 2025.
-      </p>
+    <section class="topic" id="topico_a5_entregar_sistema_em_producao">
+      <h1>A5. Entregar Sistema em Produção</h1>
     </section>
   </div>
 </body>
