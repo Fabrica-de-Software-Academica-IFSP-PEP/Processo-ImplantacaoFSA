@@ -44,39 +44,436 @@
   <h1>Processo de Implantação de Software da FSA - IFSP/PEP</h1>
   <div id="diagrama_scrum">
     <a href="#topico_a1_preparar_ambiente" id="preparar_ambiente" class="clickable round green"></a>
-    <a href="#topico_a2_disponibiliza_a_aplicacao_para_validacao" id="diponibilizar_aplicacao" class="clickable round green"></a>
-    <a href="#topico_a3_planejar_treinamento" id="planejar_treinamento" class="clickable round green"></a>
-    <a href="#topico_a4_capacitar_usuarios" id="capacitar_usuarios" class="clickable round green"></a>
-    <a href="#topico_a5_aplicar_testes_de_aceitacao" id="teste_aceitacao" class="clickable round green"></a>
-    <a href="#topico_a6_entregar_sistema_em_producao" id="entregar_sistema" class="clickable round green"></a>
-    <a href="https://fabrica-de-software-academica-ifsp-pep.github.io/Processo-ManutencaoFSA/" id="processo_manutencao" class="clickable round green" target="_blank"></a>
-    
+    <a href="#topico_a2_disponibiliza_a_aplicacao_para_validacao" id="diponibilizar_aplicacao"
+      class="clickable round green"></a>
+    <a href="#topico_a3_capacitar_usuarios" id="capacitar_usuarios" class="clickable round green"></a>
+    <a href="#topico_a4_aplicar_testes_de_aceitacao" id="teste_aceitacao" class="clickable round green"></a>
+    <a href="#topico_a5_entregar_sistema_em_producao" id="entregar_sistema" class="clickable round green"></a>
+    <a href="https://fabrica-de-software-academica-ifsp-pep.github.io/Processo-ManutencaoFSA/" id="processo_manutencao"
+      class="clickable round green" target="_blank"></a>
+
 
     <img src="./assets/images/DiagramaDoProcessoDeImplantacao.png" alt="Diagrama do SCRUM" />
   </div>
   <div class="topics">
+
     <section class="topic" id="topico_a1_preparar_ambiente">
       <h1>A1. Preparar Ambiente</h1>
+      <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+      <hr />
+      <h2>Descrição</h2>
+      <p>
+        Instalar as bibliotecas necessárias para funcionar a aplicação e/ou assegurar que o ambiente de
+        disponibilização da aplicação esteja conforme o esperado de modo que seja um servidor apto à
+        disponibilizar a aplicação ou um repositório para disponibilizar a aplicação via download.
+      </p>
+      <h2>Responsáveis e responsabilidades</h2>
+      <p>Scrum Team</p>
+      <h2>Entradas e Saídas</h2>
+      <h3>Entradas:</h3>
+      <ul>
+        <li>Acesso ao servidor ou repositório</li>
+      </ul>
+      <h3>Saídas:</h3>
+      <ul>
+        <li>Ambiente configurado</li>
+        <li>Bibliotecas globais instaladas</li>
+      </ul>
+      <h2>Tarefas</h2>
+      <ul>
+        <li><strong>A1.1</strong> Instalar bibliotecas e pacotes necessários</li>
+        <li><strong>A1.2</strong> Instalar e configurar servidor</li>
+        <li><strong>A1.3</strong> Testar a disponibilidade do ambiente</li>
+      </ul>
+      <h2>Recursos</h2>
+      <ul>
+        <li>Servidor físico ou virtual</li>
+        <ul>
+          <li>Servidor Local do IFSP</li>
+          <li>AWS</li>
+          <li>DigitalOcean</li>
+        </ul>
+        <li>Repositório para publicação</li>
+        <ul>
+          <li>GitHub Releases</li>
+          <li>Drive</li>
+        </ul>
+      </ul>
     </section>
+
+
 
     <section class="topic" id="topico_a2_disponibiliza_a_aplicacao_para_validacao">
       <h1>A2. Disponibilizar a aplicação para validação</h1>
+      <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+      <hr />
+      <h2>Descrição</h2>
+      <p>
+        Instalar as dependências necessárias para garantir a aplicação conforme a última
+        versão esperada, mantendo frontend, backend e banco de dados atualizados, realizar
+        testes de verificação para assegurar o correto funcionamento do sistema com o mínimo
+        de erros, e por fim construir e disponibilizar a solução para acesso para homologação.
+      </p>
+      <h2>Responsáveis e responsabilidades</h2>
+      <p>Scrum Team ou Pipeline</p>
+      <h2>Entradas e Saídas</h2>
+      <h3>Entradas:</h3>
+      <ul>
+        <li>Aplicação em um estado funcional.</li>
+        <li>Scripts de configuração e automação.</li>
+        <li>Banco de dados atualizado.</li>
+        <li>Ambiente de homologação disponível e configurado.</li>
+        <li>Plano de rollback aprovado.</li>
+      </ul>
+      <h3>Saídas:</h3>
+      <ul>
+        <li>Sistema implantado para homologação.</li>
+        <li>Aplicação acessível aos usuários.</li>
+      </ul>
+      <h2>Tarefas</h2>
+      <ul>
+        <li>
+          <strong>A2.1</strong>
+          Instalar ou atualizar aplicação
+        </li>
+        <li>
+          <strong>A2.2</strong>
+          Instalar e atualizar dependências
+        </li>
+        <li>
+          <strong>A2.3</strong>
+          Instalar ou atualizar banco de dados se necessário
+        </li>
+        <li>
+          <strong>A2.4</strong>
+          Executar construção (build) do sistema
+        </li>
+        <li> <strong>A2.5</strong>
+          Garantir mecanismos de contingência e backup do ambiente
+        </li>
+        <li>
+          <strong>A2.6</strong> Configurar ambiente de homologação
+        </li>
+        <li>
+          <strong>A2.7</strong> Realizar testes de fumaça
+        </li>
+        <li>
+          <strong>A2.8</strong> Executar o deploy para o ambiente de homologação
+        </li>
+      </ul>
+      <h2>Recursos</h2>
+      <ul>
+        <li>Documentação de plano de comunicação e rollback.</li>
+        <li>Infraestrutura para backup e restauração.</li>
+        <li>Ferramentas de CI/CD, Pipelines
+          <ul>
+            <li>
+              <a href="https://github.com/features/actions?locale=pt-BR" target="_blank" rel="noopener noreferer">
+                GitHub Actions</a>
+            </li>
+            <li>
+              <a href="https://www.jenkins.io/" target="_blank" rel="noopener noreferer">Jenkins</a>
+            </li>
+          </ul>
+        </li>
+        <li>Imagens e Contêineres para Servidores
+          <ul>
+            <li>
+              <a href="https://www.docker.com/" target="_blank" rel="noopener noreferer">
+                Docker</a>
+            </li>
+          </ul>
+        </li>
+        <li>Sistema Gerenciador de Banco de Dados
+          <ul>
+            <li>
+              <a href="https://www.mysql.com/" target="_blank" rel="noopener noreferer">
+                MySQL</a>
+            </li>
+            <li>
+              <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferer">PostgreSQL</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Materiais de apoio/referências</h2>
+      <p>
+        GITHUB DOCS. <strong>Guia de implantação contínua com GitHub Actions</strong>. GitHub, 2025. Disponível
+        em:
+        <a href="https://docs.github.com/pt/actions/deployment" target="_blank" rel="noopener noreferer">
+          https://docs.github.com/pt/actions/deployment
+        </a>. Acesso em: 16 ago. 2025.
+      </p>
+      <p>
+        JENKINS. <strong>Pipeline de CI/CD: Guia de automação</strong>. Jenkins Documentation, 2025. Disponível
+        em:
+        <a href="https://www.jenkins.io/doc/book/pipeline/" target="_blank" rel="noopener noreferer">
+          https://www.jenkins.io/doc/book/pipeline/
+        </a>. Acesso em: 16 ago. 2025.
+      </p>
+      <p>
+        DOCKER. <strong>Como criar ambientes de homologação com Docker</strong>. Docker Docs, 2025. Disponível
+        em:
+        <a href="https://docs.docker.com/get-started/overview/" target="_blank" rel="noopener noreferer">
+          https://docs.docker.com/get-started/overview/
+        </a>. Acesso em: 16 ago. 2025.
+      </p>
     </section>
 
-    <section class="topic" id="topico_a3_planejar_treinamento">
-      <h1>A3. Planejar Treinamento</h1>
+
+
+    <section class="topic" id="topico_a3_capacitar_usuarios">
+      <h1>A3. Preparar material de treinamento para os usuários, roteiro e cenários de testes</h1>
+      <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+      <hr />
+      <h2>Descrição</h2>
+      <p>
+        Organizar e disponibilizar conteúdos de apoio para capacitar os usuários no uso do sistema, bem como
+        estruturar um roteiro de testes com cenários que integrem o aprendizado obtido no treinamento.
+      </p>
+      <h2>Responsáveis e responsabilidades</h2>
+      <p>Scrum Team</p>
+      <h2>Entradas e Saídas</h2>
+      <h3>Entradas:</h3>
+      <ul>
+        <li>Ambiente de homologação configurado e estável.</li>
+      </ul>
+      <h3>Saídas:</h3>
+      <ul>
+        <li>Cronograma de treinamento definido;</li>
+        <li>Materiais de apoio preparados;</li>
+        <li>Roteiro de testes pronto.</li>
+      </ul>
+      <h2>Tarefas</h2>
+      <ul>
+        <li><strong>A3.1</strong> Planejar cronograma de treinamento com base nas áreas envolvidas;</li>
+        <li><strong>A3.2</strong> Preparar e revisar os materiais de apoio(documentos, slides, guias, vídeos);
+        </li>
+        <li><strong>A3.3</strong> Preparar roteiro de testes integrando cenários de treinamento.</li>
+      </ul>
+      <h2>Recursos</h2>
+      <ul>
+        <li>Materiais didáticos (documentação, manuais, vídeos tutoriais, FAQs);</li>
+        <li>Software de apoio para apresentações (PowerPoint, Google Slides);</li>
+        <li>Ambiente de teste ou homologação para execução dos cenários.</li>
+      </ul>
     </section>
 
-    <section class="topic" id="topico_a4_capacitar_usuarios">
+
+
+    <section class="topic" id="topico_a4_aplicar_testes_de_aceitacao">
       <h1>A4. Capacitar os usuários</h1>
+      <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+      <hr />
+      <h2>Descrição</h2>
+      <p>Treinar os usuários do sistema a fim de que estejam aptos a realizarem as atividades funcionais e/ou
+        não-funcionais da aplicação.</p>
+      <h2>Responsável e responsabilidades</h2>
+      <p>Scrum Team</p>
+      <h2>Entradas e Saídas</h2>
+      <h3>Entradas:</h3>
+      <ul>
+        <li>Ambiente de homologação configurado e estável;</li>
+        <li>Agenda e cronograma de treinamento definidos;</li>
+        <li>Materiais de apoio preparados.</li>
+      </ul>
+      <h3>Saídas:</h3>
+      <ul>
+        <li>Usuários treinados e aptos a operar o sistema;</li>
+        <li>Materiais de apoio (manuais, tutoriais, FAQs, vídeos);</li>
+        <li>Materiais de treinamento distribuídos;</li>
+        <li>Registros de participação e presença;</li>
+        <li>Feedback dos usuários sobre clareza e efetividade do treinamento.</li>
+      </ul>
+      <h2>Tarefas</h2>
+      <ul>
+        <li><strong>A4.1</strong> Conduzir sessões de treinamento teóricas e práticas;</li>
+        <li><strong>A4.2</strong> Aplicar simulações de uso do sistema;</li>
+        <li><strong>A4.3</strong> Coletar dúvidas e feedbacks dos participantes;</li>
+        <li><strong>A4.4</strong> Elaborar relatório de capacitação contendo lista de participantes, avaliação
+          de aprendizado e pontos de melhoria.</li>
+      </ul>
+      <h2>Recursos</h2>
+      <ul>
+        <li>Ambiente de homologação dedicado;</li>
+        <li>Materiais didáticos (documentação, manuais, vídeos tutoriais, FAQs);</li>
+        <li>Ferramentas de conferência online (Zoom, Teams, Google Meet) para treinamentos remotos se
+          necessário;</li>
+        <li>Software de apoio para apresentações (PowerPoint, Google Slides);</li>
+        <li>Ferramentas de registro de presença e avaliação (Google Forms, Microsoft Forms, etc.).</li>
+      </ul>
     </section>
 
-    <section class="topic" id="topico_a5_aplicar_testes_de_aceitacao">
-      <h1>A5. Aplicar teste de aceitação</h1>
+
+
+    <section class="topic" id="topico_a5_entregar_sistema_em_producao">
+      <h1>A5. Aplicar testes de aceitação</h1>
+      <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+      <hr />
+      <h2>Descrição</h2>
+      <p>
+        O Scrum Team aplica os testes de aceitação durante a capacitação dos usuários, utilizando os cenários
+        reais de uso do sistema. O objetivo é verificar se o software atende aos requisitos de negócio,
+        identificar
+        possíveis problemas e coletar feedbacks dos usuários enquanto eles aprendem a operar o sistema.
+      </p>
+      <h2>Responsável e responsabilidades</h2>
+      <p>Scrum Team</p>
+      <h2>Entradas e Saídas</h2>
+      <h3>Entradas:</h3>
+      <ul>
+        <li>Plano de Verificação e Validação contendo critérios de aceite;</li>
+        <li>Casos de uso ou histórias de usuário aprovadas;</li>
+        <li>Scripts ou checklists de teste;</li>
+        <li>Ambiente de homologação configurado e baseline instalada;</li>
+        <li>Dados de teste;</li>
+        <li>Materiais de treinamento preparados.</li>
+      </ul>
+      <h3>Saídas:</h3>
+      <ul>
+        <li>Relatórios de testes com evidências de validação do sistema;</li>
+        <li>Feedback dos usuários sobre usabilidade e funcionalidades;</li>
+        <li>Lista de não conformidades registradas;</li>
+        <li>Documento formal de aceite.</li>
+      </ul>
+      <h2>Tarefas</h2>
+      <ul>
+        <li><strong>A5.1</strong> Conduzir sessão de treinamento prática com usuários;</li>
+        <li><strong>A5.2</strong> Executar testes de aceitação simultaneamente ao treinamento;</li>
+        <li><strong>A5.3</strong> Registrar feedbacks, resultados e evidências;</li>
+        <li><strong>A5.4</strong> Consolidar relatório de validação e feedback;</li>
+        <li><strong>A5.5</strong> Encaminhar relatório e evidências para aprovação.</li>
+      </ul>
+      <h2>Recursos</h2>
+      <ul>
+        <li>Ferramentas de gestão de testes:</li>
+        <ul>
+          <li>TestRail</li>
+          <li>Zephyr</li>
+        </ul>
+        <li>Ferramentas de registro de defeitos:</li>
+        <ul>
+          <li>Jira</li>
+          <li>Trello</li>
+          <li>Redmine</li>
+        </ul>
+        <li>Software para captura de evidências:</li>
+        <ul>
+          <li>Lihtshot</li>
+          <li>OBS Studio</li>
+        </ul>
+        <li>Materiais de treinamento;</li>
+        <li>Ambiente de homologação estável.</li>
+      </ul>
+      <h2>Materiais de apoio/ referências</h2>
+      <p>DOCUMENTAÇÃO. TestRail Guia do Usuário. [s. d.]. Gurock. Disponível em: <a
+          href="https://www.gurock.com/testrail/docs/" target="_blank"
+          rel="noopener noreferer">https://www.gurock.com/testrail/docs/</a>. Acesso em: 15 ago. 2025.</p>
+      <p>DOCUMENTAÇÃO. Zephyr for Jira Guia de Uso. [s. d.]. Disponível em: <a href="https://www.getzephyr.com/"
+          target="_blank" rel="noopener noreferer">https://www.getzephyr.com/</a>. Acesso em: 15 ago. 2025.
+      </p>
+      <p>DOCUMENTAÇÃO. Jira Software - User Guide. [s. d.]. Atlassian. Disponível em: <a
+          href="https://support.atlassian.com/jira-software/" target="_blank"
+          rel="noopener noreferer">https://support.atlassian.com/jira-software/</a>. Acesso em: 15 ago. 2025.
+      </p>
+      <p>DOCUMENTAÇÃO. Trello Guia de Uso. [s. d.]. Disponível em: <a href="https://trello.com/en/guide" target="_blank"
+          rel="noopener noreferer">https://trello.com/en/guide</a>. Acesso em: 15 ago. 2025.
+      </p>
+      <p>DOCUMENTAÇÃO. Redmine User Guide. [s. d.]. Disponível em: <a href="https://www.redmine.org/guide"
+          target="_blank" rel="noopener noreferer">https://www.redmine.org/guide</a>. Acesso em: 15 ago. 2025.
+      </p>
+      <p>DOCUMENTAÇÃO. Lightshot Manual do Usuário. [s. d.]. Disponível em: <a
+          href="https://app.prntscr.com/en/index.html" target="_blank"
+          rel="noopener noreferer">https://app.prntscr.com/en/index.html</a>. Acesso em: 15 ago. 2025.</p>
+      <p>DOCUMENTAÇÃO. OBS Studio Guia do Usuário. [s. d.]. Disponível em: <a href="https://obsproject.com/help"
+          target="_blank" rel="noopener noreferer">https://obsproject.com/help</a>. Acesso em: 15 ago. 2025.
+      </p>
     </section>
 
-    <section class="topic" id="topico_a6_entregar_sistema_em_producao">
-      <h1>A6. Entregar Sistema em Produção</h1>
+
+
+    <section class="topic" id="topico_a5_entregar_sistema_producao">
+      <h1>6. Entregar Sistema em Produção</h1>
+      <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+      <hr />
+      <h2>Descrição</h2>
+      <p>A etapa de entrega do sistema marca a transição da solução validada em homologação para o ambiente de
+        produção.
+        O foco é garantir que a versão final esteja disponível para os usuários finais de forma segura, estável
+        e com
+        rastreabilidade. Essa fase não repete atividades já realizadas nos tópicos anteriores, mas concentra-se
+        em
+        coordenação, mitigação de riscos, execução do deploy definitivo, validação mínima e monitoramento
+        pós-implantação.</p>
+      <h2>Responsável e responsabilidades</h2>
+      <p>Scrum Team</p>
+      <h2>Entradas e Saídas</h2>
+      <h3>Entradas:</h3>
+      <ul>
+        <li>Versão final validada em homologação e aprovada em testes de aceitação;</li>
+        <li>Plano de comunicação aprovado;</li>
+        <li>Acesso ao ambiente de produção.</li>
+      </ul>
+      <h3>Saídas:</h3>
+      <ul>
+        <li>Sistema implantado, configurado, operacional e estável em produção;</li>
+        <li>Relatórios de implantação e evidências registradas;</li>
+        <li>Monitoramento inicial documentado.</li>
+      </ul>
+      <h2>Tarefas</h2>
+      <ul>
+        <li><strong>A6.1</strong> Planejar e comunicar a implantação junto às partes interessadas;</li>
+        <li><strong>A6.2</strong> Executar a implantação da versão final em produção;</li>
+        <li><strong>A6.3</strong> Validar a disponibilidade e funcionamento essencial do sistema;</li>
+        <li><strong>A6.4</strong> Monitorar o sistema após a implantação e registrar evidências.</li>
+      </ul>
+      <h2>Recursos</h2>
+      <ul>
+        <li>Ambiente de produção disponível;</li>
+        <li>Ferramentas de automação e deploy;</li>
+        <li>Checklists e materiais de validação;</li>
+        <li>Sistemas de monitoramento e registro de logs;</li>
+        <li>Documentação de implantação.</li>
+      </ul>
+      <h2>Materiais de apoio/ referências</h2>
+      <p>DOCUMENTAÇÃO. Docker Documentação Oficial. [s. d.]. Docker Inc. Disponível em: <a
+          href="https://docs.docker.com/" target="_blank" rel="noopener noreferer">https://docs.docker.com/</a>. Acesso
+        em: 16 ago. 2025.</p>
+      <p>DOCUMENTAÇÃO. Kubernetes Guia do Usuário. [s. d.]. Cloud Native Computing Foundation. Disponível em: <a
+          href="https://kubernetes.io/docs/home/" target="_blank"
+          rel="noopener noreferer">https://kubernetes.io/docs/home/</a>. Acesso em: 16 ago. 2025.</p>
+      <p>DOCUMENTAÇÃO. Jenkins User Documentation. [s. d.]. Jenkins Project. Disponível em: <a
+          href="https://www.jenkins.io/doc/" target="_blank" rel="noopener noreferer">https://www.jenkins.io/doc/</a>.
+        Acesso em: 16 ago. 2025.</p>
+      <p>DOCUMENTAÇÃO. Prometheus - Documentação Oficial. [s. d.]. Prometheus Authors. Disponível em: <a
+          href="https://prometheus.io/docs/" target="_blank" rel="noopener noreferer">https://prometheus.io/docs/</a>.
+        Acesso em: 16 ago. 2025.</p>
+      <p>DOCUMENTAÇÃO. Grafana Documentation. [s. d.]. Grafana Labs. Disponível em: <a href="https://grafana.com/docs/"
+          target="_blank" rel="noopener noreferer">https://grafana.com/docs/</a>. Acesso em: 16 ago. 2025.</p>
+      <p>DOCUMENTAÇÃO. Zabbix Manual do Usuário. [s. d.]. Zabbix LLC. Disponível em: <a
+          href="https://www.zabbix.com/documentation/current/en/manual" target="_blank"
+          rel="noopener noreferer">https://www.zabbix.com/documentation/current/en/manual</a>. Acesso em: 16
+        ago. 2025.
+      </p>
+      <p>DOCUMENTAÇÃO. CMMI Institute CMMI for Development v1.3. [s. d.]. CMMI Institute. Disponível em: <a
+          href="https://cmmiinstitute.com/cmmi/dev" target="_blank"
+          rel="noopener noreferer">https://cmmiinstitute.com/cmmi/dev</a>. Acesso em: 16 ago. 2025.</p>
+      <p>DOCUMENTAÇÃO. RATIONAL UNIFIED PROCESS (RUP) Rational Unified Process: Best Practices for Software
+        Development
+        Teams. [s. d.]. IBM. Disponível em: <a href="https://www.ibm.com/docs/en/rup" target="_blank"
+          rel="noopener noreferer">https://www.ibm.com/docs/en/rup</a>. Acesso em: 16 ago. 2025.</p>
+      <p>DOCUMENTAÇÃO. ITIL Foundation ITIL 4 Edition. [s. d.]. Axelos. Disponível em: <a
+          href="https://www.axelos.com/certifications/itil-certifications/itil-4-foundation" target="_blank"
+          rel="noopener noreferer">https://www.axelos.com/certifications/itil-certifications/itil-4-foundation</a>.
+        Acesso em: 16 ago. 2025.</p>
+      <p>DOCUMENTAÇÃO. ISO/IEC 12207 - Systems and Software Engineering Software Life Cycle Processes. [s. d.].
+        International Organization for Standardization. Disponível em: <a href="https://www.iso.org/standard/63712.html"
+          target="_blank" rel="noopener noreferer">https://www.iso.org/standard/63712.html</a>. Acesso em: 16 ago. 2025.
+      </p>
+      <p>DOCUMENTAÇÃO. SOMMERVILLE, lan. Engenharia de Software. 10. ed. São Paulo: Pearson, 2019.</p>
+      <p>DOCUMENTAÇÃO. PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma Abordagem Profissional. 9.
+        ed.
+        Porto Alegre: AMGH, 2021.</p>
     </section>
   </div>
 </body>
